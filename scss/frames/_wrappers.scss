@@ -1,0 +1,21 @@
+// ==========================================================================
+// > Wrappers
+// ==========================================================================
+
+.wrapper{
+
+    // -----------------------
+    // Standard content container
+    @include e('inner'){
+        @extend %fullwidth;
+        @extend %center;
+        max-width: 1000px;
+
+        // modifiers
+        @include m('full')  { @extend %fullvw;     }
+        @include m('wide')  { max-width: 1300px;    }
+        @include m('narrow'){ max-width: 720px;     }
+        @include m('tight') { max-width: 520px;     }
+
+    }
+}

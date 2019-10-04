@@ -1,0 +1,34 @@
+// ==========================================================================
+// > Appearance
+// ==========================================================================
+
+// Display
+%inline-block	{	display : inline-block;			}
+%inline 		{	display : inline;				}
+%block 			{	display : block;				}
+%hide           {	display : none;  				}
+
+// Hide Overflow
+// Hides the part of the elements extending outside its parent container
+// Must be assigned to the parent container
+%clipmask		{	overflow: hidden;				}
+
+// Tables
+%table 			{	display : table;				}
+%inline-table 	{	display : inline-table;			}
+%cell-middle	{	display : table-cell; 
+					vertical-align: middle; 		}
+
+// ==========================================================================
+// > Pointers
+// ==========================================================================
+%pointer-none { pointer-events: none; } 
+%pointer { cursor: pointer; }
+
+// ==========================================================================
+// > Utility Classes
+// ==========================================================================
+.u-flex       { display: flex !important; }
+.u-hide       { display: none !important;}
+.u-show       { display: block !important; }
+.u-tc         { display: table-cell !important;}

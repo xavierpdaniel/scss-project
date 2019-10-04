@@ -1,0 +1,166 @@
+// ==========================================================================
+// > Layouts / Flex
+// ==========================================================================
+// These are used to define what direction of layout a particular component is taking
+// All flex properties should be given their placeholders to be used all throughout the code
+%flex{
+	@include display-flex(flex);
+}
+
+%flex-inline{
+	@include display-flex(inline-flex);
+}
+// ==========================================================================
+// > Flex Vertical
+// ==========================================================================
+// Use this placehloder in a parent container to define how its children will be laid out. 
+// This can be used in feeds where it's usually vertical for mobile
+%flex-column {
+	@include flex-direction(column);
+}
+
+%flex-column-reverse {
+	@include flex-direction(column-reverse);
+}
+
+%vertical-layout{
+	@extend %flex;
+	@extend %flex-column;
+}
+
+// ==========================================================================
+// > Flex Horizontal
+// ==========================================================================
+// Use this placehloder in a parent container to define how its children will be laid out. 
+// This can be used in horizontal feeds
+%flex-row {
+	@include flex-direction(row);
+}
+
+%flex-row-reverse {
+	@include flex-direction(row-reverse);
+}
+
+%horizontal-layout {
+	@extend %flex;
+	@extend %flex-row;
+}
+
+// ==========================================================================
+// > Flex Wraps
+// ==========================================================================
+%flex-wrap {
+	@include flex-wrap(wrap);
+}
+
+%flex-nowrap {
+	@include flex-wrap(nowrap);
+}
+
+%flex-wrap-reverse {
+	@include flex-wrap(wrap-reverse);
+}
+
+// ==========================================================================
+// > Flex Properties
+// ==========================================================================
+// Used to align items inside a flexbox parent container to the top
+
+// > Justify Content
+%flex-start {
+	@include justify-content(flex-start);
+}
+%flex-end {
+	@include justify-content(flex-end);
+}
+%flex-center {
+	@include justify-content(center);
+}
+// Used to justify all items and let each of them have the same amount of space on each side
+%flex-around {
+	@include justify-content(space-around);
+}
+// Used distrbute all items both edges of the parent container and distribute all extra spaces in between
+%flex-edge {
+	@include justify-content(space-between);
+}
+%flex-evenly {
+	@include justify-content(space-evenly);
+}
+
+// > Align Items
+%flex-vstart {
+	@include align-items(flex-start);
+}
+%flex-vend {
+	@include align-items(flex-end);
+}
+%flex-vcenter {
+	@include align-items(center);
+}
+%flex-vstretch {
+	@include align-items(stretch);
+}
+%flex-vbaseline {
+	@include align-items(baseline);
+}
+
+// > Align Content
+%flex-align-start {
+	@include align-content(flex-start);
+}
+%flex-align-end {
+	@include align-content(flex-end);
+}
+%flex-align-center {
+	@include align-content(center);
+}
+%flex-align-around {
+	@include align-content(space-around);
+}
+%flex-align-edge {
+	@include align-content(space-between);
+}
+%flex-align-stretch {
+	@include align-content(stretch);
+}
+
+
+// > Align Self
+%flex-self-start {
+	@include align-self(flex-start);
+}
+%flex-self-end {
+	@include align-self(flex-end);
+}
+%flex-self-center {
+	@include align-self(center);
+}
+%flex-self-stretch {
+	@include align-self(stretch);
+}
+%flex-self-baseline {
+	@include align-self(baseline);
+}
+
+// Used to justify horizontal and vertical items
+%flex-fullcenter {
+    @extend %flex-center;
+    @extend %flex-vcenter;
+}
+
+// ==========================================================================
+// > Flex Ratio
+// ==========================================================================
+%flex-1 {
+	flex: 1;
+}
+
+%flex-2 {
+	flex: 2;
+}
+
+%flex-3 {
+	flex: 3;
+}
+

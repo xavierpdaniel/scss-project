@@ -1,0 +1,33 @@
+// Font Styles
+// Included here are the different font styles 
+
+// ==========================================================================
+// > Font Weights
+// ==========================================================================
+//These are the usual weights attributed to fonts.
+%font-300	    {	font-weight: 300;	}
+%font-400	    {	font-weight: 400;	}
+%font-500	    {	font-weight: 500;	}
+%font-600	    {	font-weight: 600;	}
+%font-700	    {	font-weight: 700;	}
+%font-800	    {	font-weight: 800;	}
+%font-900	    {	font-weight: 900;	}
+
+// Depending on the font weight imported assign the necessary value to be used for this placeholder. 
+// If there are two or more bolder fonts, add a placeholder like %bold-2, %bold-3, etc.
+%font-light		{	@extend %font-300;	}
+%font-normal	{	@extend %font-400;	}
+%font-bold		{ 	@extend %font-500;	}
+%font-black		{ 	@extend %font-900;	}
+
+// ==========================================================================
+// > Other Font Styles
+// ==========================================================================
+em 			    {	@extend %italic;				}
+strong		    {	@extend %font-bold;		        }
+
+%italic		    {	font-style: italic; 			}
+%underline	    { 	text-decoration: underline;	    }
+%allcaps	    {	text-transform: uppercase;		}
+%capitalize	    {	text-transform: capitalize;		}
+%no-underline 	{	text-decoration: none;		    }

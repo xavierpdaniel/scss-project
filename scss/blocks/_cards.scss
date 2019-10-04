@@ -1,0 +1,14 @@
+// ==========================================================================
+// > Card 
+// : Cards is the usual combination of images and text
+// : Example of cards are feed items, user avatar + name, etc.
+// ==========================================================================
+
+.card {
+    @include e('fig') {
+        
+    }
+    @include e('body'){
+		
+    }
+}

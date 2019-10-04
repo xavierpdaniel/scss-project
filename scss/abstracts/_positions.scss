@@ -1,0 +1,38 @@
+// ==========================================================================
+// > Positions
+// ==========================================================================
+// These are the basic positioning properties in CSS
+
+// Use absolute positioning to place elements using absolute values
+// Absolute values is by default relative to the screen so be sure to declare the parent container as RELATIVE so that the ABSOLUTE children will inherit the space
+%absolute 		{	position: absolute;		}
+
+// Use fixed positioning to place elements in definite location in the screen
+// This is usually used for sticky elements like navigation
+%fixed 			{	position: fixed;		}
+
+// Use relative positioning to reset the space for the absolute elements inside it
+%relative       {	position: relative;		}
+
+// Use sticky positioning to switch from relative to fixed once the element hits a specific edges of the screen
+%sticky{
+	position: sticky;
+	position: -webkit-sticky;
+}
+
+// ==========================================================================
+// > Floats
+// ==========================================================================
+// These are classic float properties for elements that are meant to override the usual block positioning of HTML elements
+%float-left		{	float: left;			}
+%float-right	{	float: right; 			}
+
+
+// This is used for elements that always occupy the whole area of its parent container. 
+// Before this can be used, a position should be assigned to the element
+%fill {
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

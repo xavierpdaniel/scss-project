@@ -1,0 +1,10 @@
+// ==========================================================================
+// > Layers
+// ==========================================================================
+// These are the default order of layers in the website
+
+%layer-nav		{ z-index: 100; }
+%layer-modal	{ z-index: 200; }
+%layer-catfish	{ z-index: 900; }
+
+

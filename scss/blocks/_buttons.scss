@@ -1,0 +1,36 @@
+// ==========================================================================
+// > Buttons
+// ==========================================================================
+
+
+.btn {
+    
+    // -----------------------------    
+    // Global button styling
+    margin: 0;
+
+
+
+   
+    // To avoid long class names, ordinal terms such as primary & secondary 
+    // are changed to just 1,2,3...
+    // resulting to .btn.btn--1
+    
+    // -----------------------------  
+    // Primary Button
+    @include e('1'){}
+
+    // -----------------------------    
+    // Secondary Button
+    @include e('2'){}
+
+}
+
+// global default button styling
+button, 
+input[type="submit"]{
+    margin: 0;
+}
+
+
+

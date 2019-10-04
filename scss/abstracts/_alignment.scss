@@ -1,0 +1,34 @@
+// ==========================================================================
+// > Text Alignment
+// ==========================================================================
+%text-left		{ 	text-align: left;		}
+%text-right		{	text-align: right;		}
+%text-center	{	text-align: center;		}
+
+// ==========================================================================
+// > Floats
+// ==========================================================================
+%float-left		{	float: left;	}
+%float-right	{	float: right; 	}
+
+// When using floats, it is necessary to close the pattern by clearing after the end of the float to make sure the layouts below don't break
+// To do this, extend this placeholder to the container that's assigned a float property
+%clear-both{	
+	&:after{
+		@extend %block;
+		clear: both;
+		content: " ";
+	}
+}		
+
+// ==========================================================================
+// > Block Alignment
+// ==========================================================================		
+// When displaying elements as table-cell, these alignment placeholders may be used to specify how they are going to be aligned in the Y axis
+%top		{	vertical-align: top;		}
+%middle		{	vertical-align: middle; 	}
+%bottom		{	vertical-align: bottom; 	}
+
+
+//This placehodler is used for block elements to be centered
+%center		{	margin: 0 auto;				}

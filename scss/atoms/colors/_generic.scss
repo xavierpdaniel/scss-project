@@ -1,0 +1,76 @@
+// ==========================================================================
+// > Colors
+// ==========================================================================
+// Brand colors are defined separately
+
+// Starks
+$black: #191919;
+$white: #fff;
+
+// ==========================================================================
+// > Neutrals
+// ==========================================================================
+// Neutrals are the different shades of black used to neutralize the different colors being laid out in the website
+// More shades can be added as long as the hex are based on black opacity 
+
+// Dark Gray
+$gray-90: #191919;
+$gray-80: #333;
+$gray-70: #4c4c4c;
+
+// Medium Gray
+$gray-60: #666;
+$gray-50: #7f7f7f;
+$gray-40: #999999;
+
+// Light Gray
+$gray-30: #b2b2b2;
+$gray-20: #ccc;
+$gray-10: #e5e5e5;
+$gray-5 : #f8f8f8;
+
+
+// ==========================================================================
+// > Error Colors
+// ==========================================================================	
+// Shades used for good or critical errors/status
+$green: #69a948 ;
+$red  : #ea4b4b;
+$orange: #e69800;
+
+// ==========================================================================
+// > Social Media
+// ==========================================================================
+// These are the colors that represent different social media platforms. 
+// These are constant values and are only to be changed when the platform changes its color.
+$facebook : #1f478c;
+$twitter  : #099fff;
+$instagram: #a937ce;
+$pinterest: #bd081c;
+$youtube  : #b31217;
+$linkedin : #007bb6;
+$tumblr   : #35465d;
+$snapchat : #fffc00;
+$spotify  : #1ed760;
+$whatsapp : #25d366;
+$gplus	  : #db4437;
+
+
+
+// ==========================================================================
+// > Filters
+// ==========================================================================
+
+%grayscale { 
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+%sepia { 
+    -webkit-filter: sepia(100%); 
+    filter: sepia(100%);
+}
+
+
+
+
+

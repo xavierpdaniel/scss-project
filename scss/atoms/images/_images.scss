@@ -1,0 +1,22 @@
+// ==========================================================================
+//  Images
+// ==========================================================================
+
+// Since most images are dependent on their containers for their size, 
+// it's set to block and full width by default
+// If cases arise where these properties are inappropriate, override accordingly
+
+
+img{
+    @extend %block;
+    @extend %fullwidth;
+
+    // -----------------------------
+    // Additional image stylings
+    &.is-grayscale  {   @extend %grayscale;  }
+    &.is-sepia      {   @extend %sepia;      }
+
+}
+
+
+

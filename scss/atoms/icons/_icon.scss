@@ -1,0 +1,24 @@
+// ==========================================================================
+//  Icons
+// ==========================================================================
+
+svg{   pointer-events: none;   }
+
+
+.icon{
+    // ------------------------------
+    // logotype sizes
+    @include m('1')     { width: 300px; height: 90px;}
+    @include m('2')     { width: 200px; height: 60px;}
+    @include m('3')     { width: 100px; height: 30px;}
+
+    // ------------------------------
+    // 1:1 sizes, common square icons
+    @include m('xs')    { width: 10px; height: 10px;}
+    @include m('sml')   { width: 10px; height: 10px;}
+    @include m('med')   { width: 10px; height: 10px;}
+    @include m('lrg')   { width: 10px; height: 10px;}
+    @include m('xl')    { width: 10px; height: 10px;}
+}
+
+

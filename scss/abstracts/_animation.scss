@@ -1,0 +1,36 @@
+// ==========================================================================
+// > Animation
+// ==========================================================================
+
+
+// Delays
+$delay0: 0s;
+$delay1: .33s;
+
+// Duration 
+$duration0: 0s;
+$duration1: .11s;
+$duration2: .22s;
+$duration3: .33s;
+
+// Timing Functions 
+$bezier-linear: linear;
+$bezier1: cubic-bezier(0.4, 0.0, 0.6, 1);
+$bezier2: cubic-bezier(.08,.44,.12,.94);
+
+// Direction
+$direction-for: forward;
+$direction-rev: reverse;
+$direction-alt: alternate;
+
+// Iterations
+$iteration-default: infinite;
+$iteration1: 1;
+$iteration2: 2;
+
+
+// Fill Mode
+$fill-none: none;
+$fill-forwards: forwards;
+
+

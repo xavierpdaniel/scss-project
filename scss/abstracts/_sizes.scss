@@ -1,0 +1,20 @@
+// ==========================================================================
+// > Sizes
+// ==========================================================================
+//These are common size properties used across the project
+
+// Container-relative
+%fullwidth	{	width: 100%;			}
+%fullheight	{	height: 100%;			}
+
+// Viewport-relative
+%fullvw		{	width: 100vw;			}
+%fullvh		{	height: 100vh;			}
+
+// Box-sizing
+*			{	box-sizing: border-box;	}
+%border-box	{	box-sizing: border-box;	}
+
+
+// divs are globally assigned with border-box sizing to easily manage widths in nested situations
+.div 		{	@extend %border-box;	}

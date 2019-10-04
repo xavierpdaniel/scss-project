@@ -1,0 +1,22 @@
+# *.mp3 
+*.flv
+*.fla
+*.wav
+*.csv
+*.swf
+*.tar.gz
+*.zip
+*.mo
+*.bmp
+*.ppt
+*.doc
+*.svn-base
+*.pdf
+*.xml
+*.log
+*.psd
+*.rar
+*.ai
+/.sass-cache
+**/.DS_Store
+

@@ -1,0 +1,14 @@
+// ==========================================================================
+// > Breakpoints
+// ==========================================================================
+//  : Media queries for different screen sizes
+//  320px & below       phone-small-only
+//  599px & below       phone-only
+//  600px & up          tablet-portrait-up
+//  900px & up          tablet-landscape-up
+//  1200px & up         desktop-up
+//  1800px & up         big-desktop-up
+
+@mixin breakpoint($range) {
+
+}

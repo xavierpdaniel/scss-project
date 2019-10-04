@@ -1,0 +1,53 @@
+// ==========================================================================
+//  Article
+// ==========================================================================
+
+.article{
+    @include e('header'){
+        h1 {}
+        
+    }
+
+    @include e('content'){
+        // Subheadings
+        h2{}
+        h3{}
+        h4{}
+        h5{}
+        h6{}
+
+        // Paragraphs
+        p{}
+
+        // Media
+        img{}
+        video{}
+        figure{}
+        figcaption{}
+
+        // Common content styles
+        strong, b{}
+        em{}
+
+        // Links
+        a{
+            &:link{}
+            &:hover{}
+            &:visited{}
+        }
+
+        // Pullquotes
+        blockquote{}
+
+        // Lists
+        ul{}
+        ol{}
+
+        // Superscripts, Subscripts
+        sup{}
+        sub{}
+
+        // Embeds
+        iframe{}
+    }
+}
