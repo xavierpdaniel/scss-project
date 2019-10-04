@@ -1,10 +1,19 @@
 // ==========================================================================
 // > Layers
 // ==========================================================================
-// These are the default order of layers in the website
 
+
+// Background / Hidden elements (< 0)
+
+
+// Main Content (0 - 4,999)
 %layer-nav		{ z-index: 100; }
 %layer-modal	{ z-index: 200; }
 %layer-catfish	{ z-index: 900; }
 
+
+// Expanding Content (5000 - 1,999,999)
+
+
+// Navigations, dialog boxes, sticky elements (5,000,000 - 5,999,999)
 
