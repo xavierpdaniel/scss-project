@@ -12,9 +12,12 @@
 %fullvh		{	height: 100vh;			}
 
 // Box-sizing
-*			{	box-sizing: border-box;	}
 %border-box	{	box-sizing: border-box;	}
 
 
-// divs are globally assigned with border-box sizing to easily manage widths in nested situations
-.div 		{	@extend %border-box;	}
+* 			{	@extend %border-box;	}
+
+html{	
+	padding: 0px; 
+	margin: 0px; 
+}
